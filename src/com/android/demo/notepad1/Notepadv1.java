@@ -64,7 +64,7 @@ public class Notepadv1 extends ListActivity {
     
     private void fillData() {
     	Cursor c = mDbHelper.fetchAllNotes();
-    	startManagingCursor(c);
+    	//startManagingCursor(c);
     	String[] from = new String[] {NotesDbAdapter.KEY_TITLE};
     	int[] to = new int[] {R.id.text1};
     	SimpleCursorAdapter notes = new SimpleCursorAdapter(this, R.layout.notes_row, c, from, to);
